@@ -32,11 +32,12 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel='stylesheet' href='css/reset.css'>
-	<link rel='stylesheet' href='css/style6.css'>
+	<link rel='stylesheet' href='css/style11.css'>
 
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<script src="./js/jquery-1.12.4.min.js"></script>
 </head>
 <body>
 	<ul id="skip">
@@ -134,25 +135,9 @@
 				<ul class="cf">
 					<li class="homeicon"><a href="#" title="homeicon"><span></span></a></li>
 					<li class="ticketingtab">
-						<a href="#" title="시설/대관" class="tabList">시설/대관</a>
-							<ul class="ticketingList">
-								<li><a href="index2.html" title="공연전시">공연전시</a></li>
-								<li><a href="#" title="문화사업">문화사업</a></li>
-								<li><a href="#" title="지원사업">지원사업</a></li>
-								<li><a href="#" title="문화교육">문화교육</a></li>
-								<li><a href="#" title="시설/대관">시설/대관</a></li>
-								<li><a href="#" title="알림">알림</a></li>
-								<li><a href="#" title="재단소개">재단소개</a></li>
-							</ul>
+						<a href="#" title="" class="tabList">로그인</a>
 					</li>
-					<li  class="ticketingtab tabwidth">
-						<a href="#" title="운영시설" class="tabList">운영시설</a>
-						<ul class="ticketingList">
-							<li><a href="#" title="운영시설">운영시설</a></li>
-							<li><a href="#" title="공간소개">공간소개</a></li>
-							<li><a href="#" title="대관안내">대관안내</a></li>
-						</ul>
-					</li>
+				
 					<li class="shareicon"><a href="#" title="shareicon"><span></span></a>
 						<ul>
 							<li><a href="#" title="kakao"><span class="kakao_icon"></span></a></li>
@@ -167,72 +152,30 @@
 		</nav>
 		<main id="main">
 			<div class="container_sub">
-				<section class="operation">
-					<div class="operationTop cf">
-						<img src="./img/operation-title-left.png" alt="operation일러스트" class="imgRight">
-						<img src="./img/operation-title-right.png" alt="operation일러스트" class="imgLeft">
-						<div class="operationTxt">
-							<h4>모두 함께하는 행복한 문화예술 도시 안양</h4>
-							<h3>안양문화예술재단</h3>
-							<p>안양아트센터, 평촌아트홀, 안양파빌리온, 안양박물관, 김중업건축박물관, 안양예술인센터를 운영하며 예술인에게는 창작지원을, 시민에게는 문화향수 기회를 제공하며 모두 함께하는 행복한 문화예술 도시 안양을 만들기 위해 노력하고 있습니다.</p>
-						</div>
-					</div>
-					<section class="operationList">
-						<ul class="cf">
-							<li>
-								<figure> <img src="./img/operation-list-01.png" alt="operationimg1">
-									<figcaption>안양아트센터<p>Anyang Arts Center</p>
-									</figcaption>
-								</figure>
-								<a href="#" title="공간소개" target="_blank">공간소개</a>
+				<h3>로그인</h3>
+				<fieldset>
+					<legend class="ir_so">회원가입</legend>
+					<form action="./index10.html" method="post" name="signUp" id="signUp">
+						<ul>
+							<li class="id_section">
+								<label for="idArea">아이디</label>
+								<span id="idMes" class="message"></span>
+								<input type="text" id="idArea" class="line" required size="30" placeholder="아이디">
 							</li>
 							<li>
-								<figure> <img src="./img/operation-list-02.png" alt="operationimg2">
-									<figcaption>평촌아트홀<p>Pyeongchon Arts Hall</p>
-									</figcaption>
-								</figure>
-								<a href="#" title="공간소개" target="_blank">공간소개</a>
+								<label for="pwArea">비밀번호</label>
+								<span id="pwMes" class="message"></span>
+								<input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호">
 							</li>
-							<li>
-								<figure> <img src="./img/operation-list-03.png" alt="operationimg3">
-									<figcaption>안양파빌리온<p>Anyang Pavilion</p>
-									</figcaption>
-								</figure>
-								<a href="#" title="공간소개" target="_blank">공간소개</a>
-							</li>
-							<li>
-								<figure> <img src="./img/operation-list-04.png" alt="operationimg4">
-									<figcaption>안양박물관<p>Anyang Museum</p>
-									</figcaption>
-								</figure>
-								<a href="#" title="공간소개" target="_blank">공간소개</a>
-							</li>
-							<li>
-								<figure> <img src="./img/operation-list-05.png" alt="operationimg5">
-									<figcaption>안양예술인센터<p>Anyang Artist Center</p>
-									</figcaption>
-								</figure>
-								<a href="#" title="공간소개" target="_blank">공간소개</a>
+							<li class="submit-area">
+								<a href="./index9.html" title="회원가입"><input type="text" value="회원가입" class="btn" id="submit1"></a>
+								<a href="./index.html" title="로그인"><input type="text" value="로그인" class="btn2" id="submit2"></a>
 							</li>
 						</ul>
-					</section>
-				</section>
-				<section class="bullet">
-					<h3>안양문화예술재단 소개 동영상</h3>
-					<a  href="#" target="_blank" title="소개동영상">
-						<img src="./img/introduce-vedio.png" alt="소개동영상이미지">
-						<img src="./img/introduce-vedio-text.png" alt="소개동영상이미지글" class="vedioTxt">
-					</a>
-				</section>
-				<section class="bullet">
-					<h3>안양아트센터 VR</h3>
-					<div class="vedio_bg">
-						<div class="vedio_more">
-							<a href="#" title="안양아트센터 VR보기" target="_blank">안양아트센터 VR보기</a>
-						</div>
-					</div>
-				</section>
-			</div>
+					</form>
+
+				</fieldset>
+			</div>	
 		</main>
 		<footer id="footer">
 			<div class="container2">
